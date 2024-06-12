@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  },
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Features:\r   - Youtube, spotify in a channel like hydra\r   - Medal Notification Olympics",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^9.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
