@@ -12,6 +12,14 @@ module.exports = {
         .setRequired(true)
     ),
   async execute(interaction) {
+    // Check if the user has the Administrator permission
+    if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+      return interaction.reply({
+        content: "You do not have permission to use this command!",
+        ephemeral: true,
+      });
+    }
+
     const commandName = interaction.options
       .getString("command", true)
       .toLowerCase();
@@ -23,13 +31,13 @@ module.exports = {
       );
     }
 
-    delete require.cache[
-      require.resolve(`../${command.category}/${command.data.name}.js`)
-    ];
+    const commandPath = `../${command.category}/${command.data.name}.js`;
+
+    delete require.cache[require.resolve(commandPath)];
 
     try {
       interaction.client.commands.delete(command.data.name);
-      const newCommand = require(`../${command.category}/${command.data.name}.js`);
+      const newCommand = require(commandPath);
       interaction.client.commands.set(newCommand.data.name, newCommand);
       await interaction.reply(
         `Command \`${newCommand.data.name}\` was reloaded!`
