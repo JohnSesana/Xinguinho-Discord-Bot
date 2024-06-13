@@ -1,20 +1,58 @@
 {
-  "dependencies": {
-    "@discordjs/builders": "^1.8.2",
-    "discord-player": "^6.6.2",
-    "discord.js": "^14.15.3"
-  },
-  "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "Features:\r   - Youtube, spotify in a channel like hydra\r   - Medal Notification Olympics",
-  "main": "index.js",
-  "devDependencies": {
-    "eslint": "^9.4.0"
-  },
+  "name": "discord-player-bot",
+  "version": "3.1.0",
+  "description": "A discord music bot built using discord.js and discord-player",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier . --write",
+    "register": "node src/scripts/register.js",
+    "doc": "node src/scripts/cmd-doc.js",
+    "start": "node .",
+    "dev": "node --watch-path=./src ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": [
+    "discord-bot",
+    "discord.js",
+    "discord-js",
+    "discord-music-bot",
+    "music-bot",
+    "discord-player",
+    "discord",
+    "bot",
+    "music"
+  ],
+  "author": "Lakhindar Pal",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakhindarPal/discord-player-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LakhindarPal/discord-player-bot/issues"
+  },
+  "homepage": "https://github.com/LakhindarPal/discord-player-bot#readme",
+  "dependencies": {
+    "@discord-player/extractor": "^4.4.7",
+    "@distube/ytdl-core": "^4.13.4",
+    "discord-player": "^6.6.10",
+    "discord-player-deezer": "^1.0.1",
+    "discord-player-tidal": "^0.1.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "glob": "^10.4.1",
+    "mediaplex": "^0.0.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "eslint": "^9.4.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.4.0",
+    "prettier": "3.3.1"
+  }
 }
