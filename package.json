@@ -1,6 +1,6 @@
 {
-  "name": "discord-player-bot",
-  "version": "3.1.0",
+  "name": "xinguinho-music-bot",
+  "version": "1.0",
   "description": "A discord music bot built using discord.js and discord-player",
   "main": "src/index.js",
   "type": "module",
@@ -27,7 +27,7 @@
     "bot",
     "music"
   ],
-  "author": "Lakhindar Pal",
+  "author": "Joao Sesana",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -54,5 +54,6 @@
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.4.0",
     "prettier": "3.3.1"
-  }
+  },
+  "nodeVersion": "21.6.2"
 }
