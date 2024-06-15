@@ -9,7 +9,7 @@ export const data = {
 };
 
 export function execute(interaction, queue) {
-  if (queue.isPaused())
+  if (!queue.isPlaying())
     return interaction.reply({
       ephemeral: true,
       embeds: [ErrorEmbed("A música já está pausada.")],

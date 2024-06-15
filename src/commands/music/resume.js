@@ -8,7 +8,7 @@ export const data = {
   validateVC: true,
 };
 export function execute(interaction, queue) {
-  if (queue.isPlaying())
+  if (!queue.isPlaying())
     return interaction.reply({
       ephemeral: true,
       embeds: [ErrorEmbed("A música não está pausada.")],
