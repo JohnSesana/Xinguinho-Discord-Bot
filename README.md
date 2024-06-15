@@ -104,30 +104,6 @@ By following these steps and customizing the `.env` file with your specific conf
 
    This will launch the bot, and it will connect to Discord using the provided token.
 
-### Docker Installation
-
-If you prefer to use Docker for deploying the Discord Player Bot, follow these steps:
-
-1. **Fill the `.env` File**: Ensure that you have filled out the necessary environment variables in the `.env` file as described above.
-
-2. **Build Docker Image**: Run the following command to build the Docker image:
-
-   ```bash
-   docker build -t discord-player-bot .
-   ```
-
-This command will use the Dockerfile provided in the repository to build the Docker image.
-
-3. **Run Docker Container**: Once the Docker image is built successfully, you can run the Docker container using the following command:
-
-   ```bash
-   docker run --env-file .env discord-player-bot
-   ```
-
-4. **Enjoy Dockerized Discord Player Bot**: Your Discord Player Bot should now be running in a Docker container, ready to provide music playback functionality in your Discord server.
-
-By following these steps, you can deploy the Discord Player Bot using Docker, providing a convenient and isolated environment for running the bot.
-
 ## Usage
 
 Once the bot is running and added to your Discord server, you can use the features it provides.
@@ -135,37 +111,4 @@ For detailed command usage and examples, please refer to the [Commands](./COMMAN
 
 ## Contributing
 
-1. [Fork the repo](https://github.com/LakhindarPal/discord-player-bot/fork)
-2. Install the dependencies (`npm install`)
-3. Create the feature branch (`git checkout -b my-cool-feature`)
-4. Commit your changes (`git commit -m "Added a cool new feature!"`)
-5. Push to your branch (`git push origin my-cool-feature`)
-6. [Open a pull request](https://github.com/LakhindarPal/discord-player-bot/pulls)
-
-## License
-
-This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you need further help with this project, to get support faster you can join the Discord server by just clicking [here](https://discord.gg/8yaJBZBQTA).
-
-## Feedback
-
-We value your feedback! If you have any suggestions, feature requests, or bug reports, please open an issue or reach out to us on Discord.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=lakhindarpal/discord-player-bot&type=Date)](https://star-history.com/#lakhindarpal/discord-player-bot&Date)
-
-## Supporters
-
-[![Stargazers repo roster](https://reporoster.com/stars/lakhindarpal/discord-player-bot)](https://github.com/lakhindarpal/discord-player-bot/stargazers)
-[![Forkers repo roster](https://reporoster.com/forks/lakhindarpal/discord-player-bot)](https://github.com/lakhindarpal/discord-player-bot/network/members)
-
----
-
-![Animated footer gif](http://randojs.com/images/barsSmallTransparentBackground.gif)
-[![Back to top](http://randojs.com/images/backToTopButtonTransparentBackground.png)](#discord-player-bot)
-
----
+Please check the open source project [discord-player-bot](https://github.com/LakhindarPal/discord-player-bot)
