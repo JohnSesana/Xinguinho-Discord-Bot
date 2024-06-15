@@ -1,15 +1,14 @@
-# Discord Player Bot
+# Xinguinho Discord Bot
 
 It is a Discord music bot built using [discord-player](https://npm.im/discord-player) & [discord.js](https://npm.im/discord.js) library.
 
-![Discord.js Version](https://img.shields.io/github/package-json/dependency-version/LakhindarPal/discord-player-bot/discord.js)
-![Discord Player Version](https://img.shields.io/github/package-json/dependency-version/LakhindarPal/discord-player-bot/discord-player)
+This bot is modified for my personal use in my brazilian discord server and it is not used for commercial purposes.
 
-![License](https://img.shields.io/github/license/LakhindarPal/discord-player-bot)
-![Contributors](https://img.shields.io/github/contributors/lakhindarpal/discord-player-bot)
-![Stars](https://img.shields.io/github/stars/LakhindarPal/discord-player-bot)
+# Open Source Disclaimer
 
-[![Support](https://img.shields.io/badge/Discord-Support-blue)](https://discord.gg/8yaJBZBQTA)
+This repo is a fork of the open source [discord-player-bot](https://github.com/LakhindarPal/discord-player-bot) repo with my additions and modifications.
+
+**_If you want to fork this project, please do it on the original open source project._**
 
 ## Table of Contents
 
