@@ -22,11 +22,6 @@ This repo is a fork of the open source [discord-player-bot](https://github.com/L
   - [Docker Installation](#docker-installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
-- [Feedback](#feedback)
-- [Star History](#star-history)
-- [Supporters](#supporters)
 
 ## Features
 
